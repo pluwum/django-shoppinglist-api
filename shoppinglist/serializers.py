@@ -8,8 +8,15 @@ class ShoppingListItemSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ShoppingListSerializer(serializers.ModelSerializer):
+class ShoppingListDetailSerializer(serializers.ModelSerializer):
     items = ShoppingListItemSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = ShoppingList
+        fields = '__all__'
+
+
+class ShoppingListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ShoppingList
