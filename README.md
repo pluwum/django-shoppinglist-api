@@ -4,4 +4,5 @@ Re-doing [this shoppinglist api](https://github.com/pluwum/shopping-list-api) wi
 
 ## SetUP
 
-`Install the required packages pip -r install requirements.txt`
+Install the required packages
+`pip -r install requirements.txt`
